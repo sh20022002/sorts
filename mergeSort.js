@@ -1,10 +1,3 @@
-var inversions = 0;
-r
-    // console.log(left[0]);
-  
-    
-    
-
 
 
 function mergeSort(arr){
@@ -28,15 +21,15 @@ function mergeSort(arr){
         while(i < left.length && j < right.length){
         // while there is more values that dident itartate trough
 
-            if(Math.abs(left[i]) <= Math.abs(right[j])){
+            if(Number(left[i]) <= Number(right[j])){
                 tarr.push(left[i]);
                 i++;
             } else{
-            // if right element smaller than left ad a inversions
+            
                 if(left.length < 1){
-                    inversions += 1;
+                    
                 }else{
-                    inversions += left.length - i;
+                    
                 }
                 
             tarr.push(right[j]);
